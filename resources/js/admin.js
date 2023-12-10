@@ -3,7 +3,23 @@ import svgPath from 'trumbowyg/dist/ui/icons.svg'
 import { Tooltip } from 'bootstrap'
 
 $('.trumbowyg-form').trumbowyg({
-  svgPath: svgPath
+  svgPath: svgPath,
+  btns: [
+    ['formatting'],
+    'btnGrp-design',
+    ['link', 'insertImage', 'openHTML', 'fullscreen'],
+    ['justifyLeft', 'justifyCenter', 'justifyRight', 'justifyFull'],
+    ['unorderedList', 'orderedList'],
+    ['strong', 'em', 'underline', 'strikethrough'],
+    ['superscript', 'subscript'],
+    ['removeformat'],
+    ['foreColor', 'backColor'],
+    ['horizontalRule'],
+    ['table'],
+    ['undo', 'redo'],
+    ['viewHTML']
+  ]
+
 })
 
 // Toggle the side navigation
