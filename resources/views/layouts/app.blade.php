@@ -7,6 +7,13 @@
     <meta property="og:title" content="Quran mit mir">
     <meta property="og:description" content="Entdecke göttliche Weisheit und engagiere dich in aufschlussreichen Diskussionen">
     <meta property="og:image" content="http://quranmitmir.de/storage/7/quran.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
     @auth
@@ -20,6 +27,12 @@
         'resources/js/app.js'
     ])
     @stack('inline-scripts')
+
+    <style>
+        .card-body h1 {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
 </head>
 
 <body class="d-flex flex-column vh-100">
