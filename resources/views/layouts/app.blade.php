@@ -12,8 +12,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    
+
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
     @auth
@@ -29,8 +28,14 @@
     @stack('inline-scripts')
 
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@700&display=swap');
+
         .card-body h1 {
             font-family: 'Roboto', sans-serif;
+        }
+
+        .post-content p {
+            font-family:  'Open Sans', sans-serif;
         }
     </style>
 </head>
