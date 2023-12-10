@@ -36,6 +36,7 @@
 
         .post-content p {
             font-family:  'Open Sans', sans-serif;
+            font-size: 12px;
         }
     </style>
 </head>
