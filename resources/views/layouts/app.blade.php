@@ -3,8 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <meta property="og:title" content="Quran mit mir">
+    <meta property="og:description" content="Entdecke göttliche Weisheit und engagiere dich in aufschlussreichen Diskussionen">
+    <meta property="og:image" content="http://quranmitmir.de/storage/7/quran.jpg">
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
     @auth
