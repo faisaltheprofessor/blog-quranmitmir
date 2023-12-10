@@ -4,7 +4,7 @@
   <x-card>
     @if ($post->hasThumbnail())
       <x-slot:image>
-        <img src="{{ $post->thumbnail->getUrl() }}" alt="{{ $post->thumbnail->name }}" class="card-img-top">
+        <img src="{{ $post->thumbnail->getUrl() }}" alt="{{ $post->thumbnail->name }}" class="card-img-top" style="width: 40%; height: auto">
       </x-slot>
     @endif
 
