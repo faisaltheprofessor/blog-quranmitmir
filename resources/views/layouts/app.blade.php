@@ -1,9 +1,10 @@
 <!doctype html>
 <html lang="{{ app()->getLocale() }}">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <meta property="og:title" content="Quran mit mir">
     <meta property="og:description" content="Entdecke göttliche Weisheit und engagiere dich in aufschlussreichen Diskussionen">
     <meta property="og:image" content="http://quranmitmir.de/storage/7/quran.jpg">
@@ -12,18 +13,19 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
+    <script type="text/javascript" id="cookiebanner" src="https://cdn.jsdelivr.net/gh/dobarkod/cookie-banner@1.2.2/dist/cookiebanner.min.js" data-height="20px" data-position="top" data-message="Wir verwenden Cookies, um Ihr Surf-Erlebnis zu verbessern.">
+    </script>
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
     @auth
-        <meta name="api-token" content="{{ auth()->user()->api_token }}">
+    <meta name="api-token" content="{{ auth()->user()->api_token }}">
     @endauth
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     @vite([
-        'resources/sass/app.scss',
-        'resources/js/app.js'
+    'resources/sass/app.scss',
+    'resources/js/app.js'
     ])
     @stack('inline-scripts')
 
@@ -33,7 +35,6 @@
         .card-body h1 {
             font-family: 'Roboto', sans-serif;
         }
-
     </style>
 </head>
 
@@ -50,4 +51,5 @@
 
     @include('shared/footer')
 </body>
+
 </html>
